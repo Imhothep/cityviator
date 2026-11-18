@@ -1,0 +1,28 @@
+theme = ["blowfish", "hugo-shortcode-gallery"]
+baseURL = "https://cityviator.hu/"
+defaultContentLanguage = "hu"
+locale = "hu"
+
+enableRobotsTXT = true
+summaryLength = 30
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 100
+
+[imaging]
+  anchor = 'Center'
+
+[taxonomies]
+  tag = "tags"
+  varos = "varosok"
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

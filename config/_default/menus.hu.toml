@@ -1,0 +1,24 @@
+[[main]]
+  name = "Túrák"
+  pageRef = "turak"
+  weight = 10
+
+[[main]]
+  name = "Városok"
+  pageRef = "varosok"
+  weight = 20
+
+[[main]]
+  name = "Rólunk"
+  pageRef = "rolunk"
+  weight = 30
+
+[[footer]]
+  name = "Túrák"
+  pageRef = "turak"
+  weight = 10
+
+[[footer]]
+  name = "Rólunk"
+  pageRef = "rolunk"
+  weight = 20

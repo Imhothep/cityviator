@@ -1,0 +1,17 @@
+disabled = false
+locale = "hu"
+label = "Magyar"
+weight = 1
+title = "Cityviator - Városlátogató"
+
+[params]
+  displayName = "HU"
+  isoCode = "hu"
+  rtl = false
+  dateFormat = "2006. January 2."
+  description = "Gyalogos városi túrák állomásról állomásra – térképpel, útvonaltervvel, épületleírásokkal és fotókkal."
+  copyright = "© Cityviator – Városlátogató · Térképadatok: © OpenStreetMap közreműködők · Leírások és fotók forrása: [zárterkély](https://zarterkely.hu/blog/esonap/)"
+
+[params.author]
+  name = "Cityviator"
+  headline = "Városlátogató – gyalogos városi túrák"
