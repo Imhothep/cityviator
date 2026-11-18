@@ -1,0 +1,110 @@
+/* Cityviator – térképek és állomások */
+
+.turaterkep { margin: 1.5rem 0 2rem; }
+
+.turaterkep-map {
+  height: 480px;
+  width: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgb(var(--color-neutral-300));
+  z-index: 0;
+}
+.turaterkep-attekinto { height: 420px; }
+@media (max-width: 640px) { .turaterkep-map { height: 380px; } }
+
+.turaterkep-megj {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: rgb(var(--color-neutral-500));
+}
+.turaterkep-megj a { text-decoration: underline; }
+
+.tura-osszegzes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.tura-osszegzes .icon { color: rgb(var(--color-primary-600)); }
+.tura-gpx {
+  margin-left: auto;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: rgb(var(--color-primary-600));
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.tura-gpx:hover { background: rgb(var(--color-primary-700)); }
+
+/* számozott jelölők */
+.tm-marker span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #15803d;
+  color: #fff;
+  font: 700 14px/1 system-ui, sans-serif;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+.tm-start span { background: #b91c1c; }
+
+.tm-popup { display: flex; flex-direction: column; gap: 0.25rem; }
+.tm-popup img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.4rem; margin: 0 0 0.25rem; }
+.tm-popup em { color: #b91c1c; font-style: normal; font-size: 0.8rem; }
+.leaflet-container a.tm-link, .tm-popup a { color: #15803d; }
+
+/* állomások */
+.allomas {
+  margin: 2.5rem 0;
+  padding-top: 0.5rem;
+  scroll-margin-top: 6rem;
+}
+.allomas-cim { display: flex; align-items: center; gap: 0.75rem; }
+.allomas-szam {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: rgb(var(--color-primary-600));
+  color: #fff;
+  font-size: 1.1rem;
+}
+.allomas:first-of-type .allomas-szam { background: #b91c1c; }
+.gallery-wrapper { margin: 1rem 0 0.5rem; }
+.allomas-hely, .allomas-forras { font-size: 0.85rem; color: rgb(var(--color-neutral-500)); }
+.allomas-forras a { text-decoration: underline; }
+
+
+.allomas-tovabb {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgb(var(--color-primary-100));
+  color: rgb(var(--color-primary-800));
+  font-size: 0.9rem;
+}
+.dark .allomas-tovabb { background: rgb(var(--color-primary-900)); color: rgb(var(--color-primary-100)); }
+
+/* a Blowfish ikonok alapból blokk-elemek – itt soron belül kellenek */
+.tura-osszegzes .icon,
+.allomas-hely .icon,
+.allomas-tovabb .icon,
+.tura-gpx .icon {
+  display: inline-block;
+  vertical-align: -0.125em;
+}
+.tura-gpx { display: inline-flex; align-items: center; gap: 0.4rem; }
+.tura-gpx .icon { color: #fff; }
